@@ -1,0 +1,78 @@
+@import "../../../common/styles/mixins";
+#container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  color: #333;
+  @include mobile{
+    padding-bottom: 0;
+  }
+}
+
+.carousel__item{
+  width:410px;
+  height: 535px;
+  position: relative;
+  &__title{
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform:translateY(-50%);
+    z-index: 1100;
+    @include mobile{
+      bottom:40%;
+      text-align:right;
+    }
+    h3{
+      color: rgb(122, 122, 122);
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-size: 0.7rem;
+      font-family: PlayfairDispaly, sans-serif;
+      font-weight: 200;
+      letter-spacing: 0.15rem;
+      text-align: left;
+    }
+    h2{
+      font-size:1.6rem;
+      color: rgb(51, 51, 51);
+      line-height: 1.077;
+      font-family: "PlayfairDisplay";
+      font-weight: 200;
+      letter-spacing: 0.15rem;
+      overflow: hidden;
+    }
+  }
+  .price{
+    margin-top: 2rem;
+    color: rgb(206, 96, 168);
+    line-height: 1.2;
+    font-size:1.2rem;
+  }
+  .link-price{
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    &:hover{
+      border-bottom: 2px solid black;
+      transition: all 0.5s;
+    }
+  }
+
+}
+
+
+
+.slick-next, .slick-prev{
+  width: 15px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-prev:before {
+  content: '';
+}
+
+.slick-next:before {
+  content: '';
+}

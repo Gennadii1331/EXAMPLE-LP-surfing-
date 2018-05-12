@@ -1,0 +1,44 @@
+@import "../../../common/styles/mixins";
+
+.emailForm{
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  @include mobile{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.inputForm{
+  width: 540px;
+  height: 50px;
+  border:1px solid lightgray;
+  font-size: 1rem;
+  @include mobile{
+    width: 80%;
+  }
+  &::placeholder { /* Chrome/Opera/Safari */
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    padding:20px 30px;
+    background-color: rgb(245,245,245);
+  }
+}
+
+.btnForm{
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border:0;
+  cursor: pointer;
+  background-color: rgb(109,177,241);
+  &:hover{
+    background-color:#1c8cf1;
+  }
+  @include mobile{
+    width:20%;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../../common/styles/mixins";
+.slider-box{
+  position:relative;
+  overflow:hidden;
+}
+.slider{
+  position:relative;
+  width:10000px;
+  height:570px;
+  @include mobile{
+    height:285px;
+    margin: 0;
+  }
+}
+.slider > div{
+  float:left;
+}
+
+
+.prev, .next{
+  display:block;
+  width:29px;
+  height:100%;
+  cursor:pointer;
+
+}
+
+.blueDec{
+  color:rgb(109,177,241);
+}
+
